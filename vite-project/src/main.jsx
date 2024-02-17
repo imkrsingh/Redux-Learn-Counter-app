@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App'
 import './index.css'
 import store from './store'
 import { Provider } from 'react-redux'
 
-store.subscribe(() => console.log(store.getState()));
+store.subscribe(() => console.log(store.getState())); 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
